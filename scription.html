@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBSD ASM backtamber feat.JUNKEYについて</title>
+    <style>
+        h1{text-align: center; padding: 50px 0px 0px;}
+        h4{text-align: center; margin: 25px 490px 25px;}
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: gainsboro;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        div.splans{
+            display: flex;
+        }
+        .plan {
+            display: inline-block;
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px 5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 400p;
+            flex-direction: column;
+            text-align: center;
+        }
+        .plan h2 {
+            color: #4285f4;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .plan p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 16px;
+        }
+        .plan .price {
+            font-size: 24px;
+            color: #333;
+            margin-top: 15px;
+        }
+        .button {
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #357ae8;
+        }
+        .toggle-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: skyblue;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .toggle-button:hover {
+            background-color: rgb(102, 195, 231);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        MBSD ASM backtamber feat.JUNKEY
+    </div>
+
+    <h1>MBSD ASM backtamber feat.JUNKEYをお試しください</h1>
+    <h4>すべての人にすべての安全機能を、解約はいつでも可能です。定期購入に登録すると、<a href="https://www.mbsd.jp/company/sustainability/mbsdcc2024/">MBSD</a>と<a href="https://www.meti.go.jp/press/2023/05/20230529001/20230529001.html">ASM</a>の規約や理念に同意したことになります。MBSD ASM backtamber feat.JUNKEYは個人のお客様のプランから法人向けのお客様向けのプランまで多様なプランをご用意しています。本機能は日本語にのみ対応しております。本機能については<a href="">こちら</a>をご参照ください。 </h4>
+    
+    <div class="content">
+        <button class="toggle-button" onclick="togglePlans()">個人向けプラン/法人向けプランに切り替え</button>
+        <div id="splans">
+            <div class="plan">
+                <h2>通常状態ノーマルプラン</h2>
+                <p style="color: white;">運</p>
+                <p >・捜索の結果表示</p>
+                <p>・潜在的な攻撃経路の特定</p>
+                <p>・セキュリティポリシーの適応</p>
+                <p>・脆弱性発見時のメールの送付</p>
+                <P>------------------------------------------------------------</P>
+                <p class="price">月額 ￥0</p>
+                <a href="#" class="button">現在</a>
+            </div>
+            <div class="plan">
+                <h2>最強無敵つよつよプラン</h2>
+                <p>・左記の内容</p>
+                <p>・脆弱性発見後対応策の例</p>
+                <p>・リアルタイムでの脅威監視</p>
+                <p>・定期的なセキュリティチェック</p>
+                <p>・システムやネットワークの脆弱性評価</p>
+                <P>------------------------------------------------------------</P>
+                <p class="price">月額 ¥12,000</p>
+                <a href="#" class="button">選択</a>
+            </div>
+        </div>
+        <div id="hplans" style="display:none;">
+            <div class="plan">
+                <h2>+10プラン</h2>
+                <p>使用可能ライセンス+10</p>
+                <p class="price">月額 ¥5,000</p>
+                <a href="#" class="button">選択</a>
+            </div>
+            <div class="plan">
+                <h2>+50プラン</h2>
+                <p>使用可能ライセンス+50</p>
+                <p class="price">月額 ¥12,000</p>
+                <a href="#" class="button">選択</a>
+            </div>
+            <div class="plan">
+                <h2>+100プラン</h2>
+                <p>使用可能ライセンス+100</p>
+                <p class="price">月額 ¥20,000</p>
+                <a href="#" class="button">選択</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function togglePlans() {
+            const individualPlans = document.getElementById('splans');
+            const businessPlans = document.getElementById('hplans');
+            if (individualPlans.style.display === 'none') {
+                individualPlans.style.display = 'block';
+                businessPlans.style.display = 'none';
+            } else {
+                individualPlans.style.display = 'none';
+                businessPlans.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
